@@ -37,8 +37,6 @@ then
 else
 	echo "Apache2 not installed...will be installed now"
 	printf 'Y\n' | apt-get install apache2
-	echo "Waiting for installation to complete, if any errors please contact administrator."
-	sleep 90
 	echo "Apache2 service was installed"
 	
 fi
@@ -70,7 +68,7 @@ if [ $(dpkg --list | grep awscli | cut -d ' ' -f 3 | head -1) == 'awscli' ]
 
 fi
 
-
+#################### Here Task 2 Ends ############################################
 
 
 
